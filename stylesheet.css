@@ -184,13 +184,13 @@ html {
 }
 
 /*--スマートフォン用ブレイクポイント--*/
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {*/
     /*--background-image--*/
-    html {
-        background-image: url("mobile-background.png");
-        background-attachment: fixed;
-        background-size: cover;
-    }
+/*     html { */
+/*         background-image: url("mobile-background.png"); */
+/*         background-attachment: fixed; */
+/*         background-size: cover; */
+/*     } */
     /*--end--*/
-}
+/* } */
 /*--end--*/
