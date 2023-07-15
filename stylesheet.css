@@ -187,7 +187,7 @@ html {
 @media screen and (max-width: 480px) {
     /*--background-image--*/
     html {
-        background-image: url("/image/background/mobile-background.png");
+        background-image: url("mobile-background.png");
         background-attachment: fixed;
         background-size: cover;
     }
