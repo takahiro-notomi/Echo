@@ -1,6 +1,6 @@
 /*--background-image---*/
 html {
-    background-image: url("echo/pc-background.jpg");
+    background-image: url("pc-background.jpg");
     background-position: center center;
   /* 画像をタイル状に繰り返し表示しない */
   background-repeat: no-repeat;
