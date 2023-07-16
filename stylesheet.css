@@ -179,13 +179,14 @@ html {
 }
 
 #QR {
-  display: flex;
-  justify-content: space-around;
   max-width: 480px;
 }
 
 .QR-img {
   width: 160px;
+  display: flex;
+	justify-content: space-around;
+}
   
 .QR-name {
 	display: flex;
