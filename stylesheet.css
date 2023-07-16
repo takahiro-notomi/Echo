@@ -183,9 +183,12 @@ html {
 }
 
 .QR-img {
-  width: 160px;
   display: flex;
 	justify-content: space-around;
+}
+
+.QR-img img {
+  width: 160px;
 }
   
 .QR-name {
