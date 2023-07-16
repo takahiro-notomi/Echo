@@ -173,6 +173,11 @@ html {
 }
 /*--end--*/
 
+/*--sns--*/
+	
+/*--end--*/
+
+/*--コピーライト--*/
 .copy {
     display: flex;
     justify-content: flex-end;
@@ -182,6 +187,7 @@ html {
 .copy p {
     margin-right: 3px;
 }
+/*--end--*/
 
 /*--スマートフォン用ブレイクポイント--*/
 /*@media screen and (max-width: 480px) {*/
