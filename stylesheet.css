@@ -180,12 +180,18 @@ html {
 
 #QR {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 480px;
 }
 
 #QR img {
   width: 160px;
+  
+.QR-name {
+	display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
 /*--end--*/
 
 /*--コピーライト--*/
