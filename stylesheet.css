@@ -8,7 +8,7 @@ position:fixed;
 top:0;
 left:0;
 z-index:-1;
-/*width:100%;*/
+width:100%;
 height:100vh;
 background:url(pc-background.jpg) center no-repeat;
 background-size:cover;
@@ -226,7 +226,7 @@ position:fixed;
 top:0;
 left:0;
 z-index:-1;
-/*width:100%;*/
+width:100%;
 height:100vh;
 background:url(mobile-background.png) center no-repeat;
 background-size:cover;
