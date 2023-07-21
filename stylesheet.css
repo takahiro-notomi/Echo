@@ -1,5 +1,5 @@
 /*--background-image---*/
-html {
+html:before {
     /*pc-background.jpg*/
     
 content:"";
