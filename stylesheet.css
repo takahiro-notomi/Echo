@@ -10,6 +10,7 @@ html:before {
     width:100%;
     height:100lvh;
     background:url("pc-background.jpg") center no-repeat;
+    background-color: rgba(255, 255, 255, 0.2);
     background-size:cover;
 }
 /*--end--*/
@@ -239,6 +240,7 @@ html:before {
  width: 100%;
  height: 100%;
  backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.2);
  z-index: -1;
 }
 } 
