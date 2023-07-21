@@ -26,16 +26,6 @@ html:before {
     /* box-shadow: 1px 1px 2px white; */
     border: solid 2px rgba(255, 255, 255, 0.369)
 }
-
-.main-body:before {
-	content:"";
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    width: 100lvh;
-    backdrop-filter: blur(2px);
-}
 /*--end--*/
 
 /*--header--*/
@@ -240,5 +230,15 @@ html:before {
     background-size:cover;
     } 
     /*--end--*/
+
+	.main-body:before {
+	content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100lvh;
+    backdrop-filter: blur(2px);
+}
 } 
 /*--end--*/
