@@ -217,7 +217,8 @@ html:before {
 /*--スマートフォン用ブレイクポイント--*/
 @media screen and (max-width: 480px) {
     /*--background-image--*/
-  html:before { 
+	
+   html:before { 
          /*mobile-background.png*/
 	  content:"";
     display:block;
@@ -232,16 +233,15 @@ html:before {
     } 
     /*--end--*/
 
-	.main-body:before {
-	position: absolute;
- content: "";
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.2);
- z-index: -1;
-}
+ .main-body:before {
+     position: absolute;
+     content: "";
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     backdrop-filter: blur(2px);
+     z-index: -1;
+ }
 } 
 /*--end--*/
