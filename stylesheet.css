@@ -234,7 +234,6 @@ html:before {
     /*--end--*/
 
  .main-body:before {
-     position: absolute;
      content: "";
      top: 0;
      left: 0;
