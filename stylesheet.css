@@ -1,5 +1,5 @@
 /*--background-image---*/
-html:before {
+html::before {
     /*pc-background.jpg*/
     content:"";
     display:block;
@@ -218,7 +218,7 @@ html:before {
 @media screen and (max-width: 480px) {
     /*--background-image--*/
 	
-   html:before { 
+   html::before { 
          /*mobile-background.png*/
 	  content:"";
     display:block;
@@ -233,7 +233,7 @@ html:before {
     } 
     /*--end--*/
 
- .main-body:before {
+ .main-body::before {
      content: "";
      top: 0;
      left: 0;
