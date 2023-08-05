@@ -22,7 +22,6 @@ html::before {
     margin: 15px auto;
     border-radius: 10px;
     padding: 15px 15px 0px 15px;
-    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
     /* box-shadow: 1px 1px 2px white; */
     border: solid 2px rgba(255, 255, 255, 0.369)
@@ -233,15 +232,8 @@ html::before {
     } 
     /*--end--*/
 
- html::after {
-     content: "";
-     top: 0;
-     left: 0;
-     z-index: -1;
-     width: 380px;
-     height: 100%;
+ main-body {
      backdrop-filter: blur(2px);
-     background-color: rgba(255,255,255,0.5);
  }
 } 
 /*--end--*/
