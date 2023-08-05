@@ -233,7 +233,7 @@ html::before {
     } 
     /*--end--*/
 
- .main-body::after {
+ html::after {
      content: "";
      top: 0;
      left: 0;
