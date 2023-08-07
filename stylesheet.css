@@ -181,6 +181,14 @@ html::before {
   max-width: 480px;
 }
 
+#link-botton {
+    display: flex;
+}
+
+.Instagram-link, .Line-link {
+    width: 25%;
+}
+
 #QR {
   max-width: 480px;
 }
