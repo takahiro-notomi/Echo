@@ -1,56 +1,51 @@
-/*--background-image---*/
-
-/*フロー → 読み込み → タイトルとエンター背景は画像 → アニメーションで内容を表示*/
-
+/*--background-image*/
 html {
-      
+    /* background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%); */
+    background-image: linear-gradient(-35deg, #92fe9d 0%, #00c9ff 100%);
+    /* background-image: linear-gradient(-45deg, #ffecd2 0%, #fcb69f 100%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 /*--end--*/
+
+/*ローディング画面実装用CSSエリア*/
+
+/*------------------------------*/
+
+
+#titleSection img {
+    margin: 10% auto;
+    display: block;
+    /* filter: drop-shadow(20px 50px 3px rgba(57, 255, 219, 0.3)); */
+}
+
 
 /*google fonts*/
 .main-body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    width: 380px;
-    margin: 15px auto;
+    width: 75%;
+    margin: 7% auto;
     border-radius: 10px;
     padding: 15px 15px 0px 15px;
-    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
     border: solid 2px rgba(255, 255, 255, 0.369)
 }
-/*--end--*/
 
-/*--header--*/
-#title {
-    display: flex;
-    justify-content: space-between;
-    max-width: 380px;
-}
-
-#title h2 {
-    font-size: 27px;
-    margin :5px 0px 5px 10px;
-}
-
-.header-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 20px;
-}
-
-.header-list a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
-}
 /*--end--*/
 
 /*--description--*/
 .description {
     text-align: center;
     width: 85%;
-    margin: 40px auto 40px auto;
+    margin: 30% auto 10% auto;
     font-size: 17px;
+}
+
+.description p {
+    font-size: 120%;
+    line-height: 250%;
 }
 /*--end--*/
 
@@ -58,15 +53,18 @@ html {
 /*--MENU--*/
 #same-drink h2 {
     width: 94%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: auto;
     margin-bottom: 20%;
     border-bottom: 3px solid black;
 }
 
+#DrinkSection1, #DrinkSection2 {
+    display: flex;
+}
+
 .drink-1,.drink-2,.drink-3,.drink-4,.drink-5,.drink-6 {
     text-align: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 #menu img {
@@ -81,23 +79,25 @@ html {
 
 /*--access--*/
 #location {
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 #location h2 {
-    margin-left: 10px;
+    margin: 0 auto;
 }
 
 #map {
     margin-top: 60px;
     text-align: center;
+    display: flex;
+    justify-content: end;
 }
 
-#location img {
-    width: 85%;
-    padding: 5%;
-    background-color: rgba(192, 190, 190, 0.2);
-    backdrop-filter: blur(10px);
+#map img {
+    width: 40%;
+    text-align: center;
+    margin:  auto;
+    padding: 2%;
     border-radius: 15px;
     box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.579), 3px 3px 15px rgba(121, 121, 121, 0.369);
 }
@@ -110,15 +110,17 @@ html {
     border-bottom: 3px solid black;
 }
 
+#root {
+    display: block;
+}
+
+/* オレンジルート */
 #orange-root { 
-    margin: 50px auto;
-    width:95%;
+    width:65%;
     padding-top: 2.5px;
     padding-bottom: 2.5px;
-    background-color: rgba(192, 191, 190, 0.2);
-    backdrop-filter: blur(10px);
     border-radius: 15px;
-    box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.579), 3px 3px 15px rgba(121, 121, 121, 0.369);
+    box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.3), 3px 3px 15px rgba(121, 121, 121, 0.3);
 }
 
 #orange-root p {
@@ -131,19 +133,18 @@ html {
     color: rgb(238, 238, 238);
     padding: 3px 10px;
     margin-right: 10px;
-    background-color: rgba(255, 165, 0, 0.7);
+    background-color: rgba(255, 166, 0, 0.5);
     border-radius: 20px;
 }
+/* ---- */
 
+/* ミントルート */
 #mint-root {
-    margin: 50px auto 0px auto;
-    width:95%;
+    width:65%;
     padding-top: 2.5px;
     padding-bottom: 2.5px;
-    background-color: rgba(192, 191, 190, 0.2);
-    backdrop-filter: blur(10px);
     border-radius: 15px;
-    box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.579), 3px 3px 15px rgba(121, 121, 121, 0.369);
+    box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.3), 3px 3px 15px rgba(121, 121, 121, 0.3);
 }
 
 #mint-root p {
@@ -165,39 +166,11 @@ html {
     margin-left: 10px;
     font-size: 13px;
 }
+/* ---- */
+
 /*--end--*/
 
 /*--sns--*/
-#sns {
-  max-width: 480px;
-}
-
-#link-botton {
-    display: flex;
-}
-
-.Instagram-link, .Line-link {
-    width: 25%;
-}
-
-#QR {
-  max-width: 480px;
-}
-
-.QR-img {
-  display: flex;
-	justify-content: space-around;
-}
-
-.QR-img img {
-  width: 160px;
-}
-  
-.QR-name {
-	display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-}
 /*--end--*/
 
 /*--コピーライト--*/
@@ -215,15 +188,191 @@ html {
 /*--スマートフォン用ブレイクポイント--*/
 @media screen and (max-width: 480px) {
     /*--background-image--*/
+	
+    /*--end--*/
+
+    .main-body {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        width: 380px;
+        margin: 15px auto;
+        border-radius: 10px;
+        padding: 15px 15px 0px 15px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        border: solid 2px rgba(255, 255, 255, 0.369)
+    }
+
+    #title {
+        display: flex;
+        justify-content: space-between;
+        max-width: 380px;
+    }
     
- main-body {
-    margin: 15px auto;
-    border-radius: 10px;
-    padding: 15px 15px 0px 15px;
-    backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.5)
-    border: solid 2px rgba(255, 255, 255, 0.369)
- }
+    #title h2 {
+        font-size: 27px;
+        margin :5px 0px 5px 10px;
+    }
+    
+    .header-list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    .header-list a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    /*--end--*/
+    
+    /*--description--*/
+    .description {
+        text-align: center;
+        width: 85%;
+        margin: 40px auto 40px auto;
+        font-size: 17px;
+    }
+    /*--end--*/
+    
+    
+    /*--MENU--*/
+    #same-drink h2 {
+        width: 94%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20%;
+        border-bottom: 3px solid black;
+    }
+    
+    #manu {
+        display: flex;
+    }
+    
+    .drink-1,.drink-2,.drink-3,.drink-4,.drink-5,.drink-6 {
+        text-align: center;
+        margin-bottom: 20%;
+    }
+    
+    #menu img {
+        width: 25%;
+    }
+    
+    .name-price p {
+        font-size: 145%;
+    }
+    
+    /*--end--*/
+    
+    /*--access--*/
+    #location {
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    #location h2 {
+        margin-left: 10px;
+    }
+    
+    #map {
+        margin-top: 60px;
+        text-align: center;
+        width: 50%;
+    }
+    
+    #location img {
+        width: 50%;
+        padding: 5%;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.579), 3px 3px 15px rgba(121, 121, 121, 0.369);
+        text-align: left;
+    }
+    
+    #location h2 {
+        width: 94%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20%;
+        border-bottom: 3px solid black;
+    }
+
+    #root {
+        display: flex;
+    }
+    
+    #orange-root { 
+        margin: 50px auto;
+        width: 45%;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.579), 3px 3px 15px rgba(121, 121, 121, 0.369);
+        text-align: left;
+    }
+    
+    #orange-root p {
+        margin: 10.5px auto;
+        max-width: 82%;
+        font-size: 19px;
+    }
+    
+    .orange-text {
+        color: rgb(238, 238, 238);
+        padding: 3px 10px;
+        margin-right: 10px;
+        background-color: rgba(255, 165, 0, 0.7);
+        border-radius: 20px;
+    }
+    
+    #mint-root {
+        margin: 50px auto 0px auto;
+        width: 95%;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.579), 3px 3px 15px rgba(121, 121, 121, 0.369);
+        text-align: left;
+    }
+    
+    #mint-root p {
+        margin: 10.5px auto;
+        max-width: 82%;
+        font-size: 19px;
+    }
+    
+    .mint-text {
+        color: rgb(238, 238, 238);
+        padding: 3px 10px;
+        margin-right: 10px;
+        background-color: rgba(48, 188, 206, 0.7);
+        border-radius: 20px;
+    }
+    
+    .annotation {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    /*--end--*/
+    
+    /*--sns--*/
+    
+    /*--end--*/
+    
+    /*--コピーライト--*/
+    .copy {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0px;
+    }
+    
+    .copy p {
+        margin-right: 3px;
+    }
 
 } 
-/*--end--*/
+/*--end---*/
